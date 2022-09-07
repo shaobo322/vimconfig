@@ -1,0 +1,23 @@
+{
+     "languageserver": {
+         "golang": {
+             "command": "gopls",
+             "rootPatterns": ["go.mod", ".vim/", ".git/", ".bg"],
+             "filetypes": ["go"]
+         },
+         "lua": {
+             "command": "lua-lsp",
+             "filetypes": ["lua"]
+         },
+         "clangd": {
+           "command": "ccls",
+           "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+           "filetypes": ["c", "cpp", "objc", "objcpp"]
+         },
+         "rust": {
+           "command": "rust-analyzer",
+           "filetypes": ["rust"],
+           "rootPatterns": ["Cargo.toml"]
+         }
+     }
+ }
